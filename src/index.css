@@ -1,0 +1,49 @@
+a {
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+.spinner-grow {
+    width: 3rem;
+    height: 3rem;
+}
+ul{
+    margin-top: 20px;
+}
+button{
+    outline: none;
+}
+button:focus{
+    outline: none;
+}
+
+/*colors*/
+.gray{
+    color: gray;
+}
+
+.blue{
+    color: blue;
+}
+
+.green{
+    color: green;
+}
+
+.red{
+    color: red;
+}
