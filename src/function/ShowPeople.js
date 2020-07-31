@@ -1,11 +1,9 @@
 import React from 'react';
 
-const ShowPeople = ({arr}) => {
-    if (!arr.length) {
-        return <p className="align-content-center">No data</p>
-    }
+const ShowPeople = ({arr, name}) => {
     return (
-        <div className="text-center">
+        <div className="text-center mb-2">
+            <h1>{name}</h1>
             <table className="table table-hover">
                 <thead>
                 <tr>

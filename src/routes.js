@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import { GetData } from "./hook/hook";
 import Loader from "./components/common/Loader";
 import Users from "./pages/Users/Users";
-import Month from "./pages/Month/Month";
+import SortedByMonth from "./pages/Month/SortedByMonth";
 
 function Routes() {
     const {data} = GetData();
@@ -13,7 +13,7 @@ function Routes() {
     return (
         <Switch>
             <Route path="/users"><Users data={data}/></Route>
-            <Route path="/data"><Month data={data}/></Route>
+            <Route path="/data"><SortedByMonth data={data}/></Route>
         </Switch>
     );
 }

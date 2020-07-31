@@ -1,4 +1,4 @@
-import  { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 export const GetData = () => {
     const [data, setData] = useState([])
@@ -13,7 +13,7 @@ export const GetData = () => {
         } catch (e) {
             throw e;
         }
-    }, [fetch]);
+    }, []);
 
     useEffect(() => {
         dataOfUsers();
