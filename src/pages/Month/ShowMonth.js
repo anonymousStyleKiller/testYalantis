@@ -17,10 +17,13 @@ function ShowMonth({show, hideListPeople, showListPeople, month, name}) {
                     className={`list-group-item d-flex justify-content-between 
                     align-items-center ${ShowColor(month.length)}`}>
                     {name}
-                    <span onMouseOver={() => {
-                        showListPeople()
-                    }}
-                          className="badge badge-primary badge-pill mr-2">{month.length}</span>
+                    <div>
+                        <span className="badge badge-primary badge-pill mr-2">{month.length}</span>
+                        <button type="button" className="btn-sm btn-info" onClick={() => {
+                            showListPeople()
+                        }} >Details</button>
+                    </div>
+
                 </li>
             }
         </>
